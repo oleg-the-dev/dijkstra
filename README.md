@@ -1,6 +1,6 @@
 # Dijkstra Algorithm.
 
-Dijkstra algorithm implementation for a 2d-array (matrix).
+Dijkstra algorithm implementation for a 2d-array (matrix) and bidirectional movement (you can move only horizontally and vertically).
 
 ![Demonstration](board.png)
 
