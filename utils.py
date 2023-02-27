@@ -8,7 +8,7 @@ from matplotlib.colors import ListedColormap, BoundaryNorm
 def generate_random_data(
         n: int = 10,
         m: int = 10
-) -> Dict:
+) -> Dict[str, List[List[int] | int]]:
     """
     Generates JSON with a random board and a random target.
     :param n: number of rows.

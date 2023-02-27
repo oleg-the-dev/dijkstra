@@ -35,7 +35,7 @@ class DijkstraAlgorithm:
             if current == target:
                 return distances[current]
 
-            for neighbor in cls.get_neighbors(current, n_rows, n_cols):
+            for neighbor in cls._get_neighbors(current, n_rows, n_cols):
                 # Calculate the distance to the neighboring cell
                 distance = current_distance + board[neighbor[0]][neighbor[1]]
 
@@ -47,7 +47,7 @@ class DijkstraAlgorithm:
                     heapq.heappush(priority_queue, (distance, neighbor))
 
     @classmethod
-    def get_neighbors(
+    def _get_neighbors(
             cls,
             node: Tuple[int, int],
             n_rows: int,
